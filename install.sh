@@ -36,7 +36,6 @@ backup_then_copy() {
 say "Copying configs…"
 backup_then_copy "$REPO_DIR/wezterm/wezterm.lua"    "$HOME/.wezterm.lua"
 backup_then_copy "$REPO_DIR/starship/starship.toml" "$CONFIG_DIR/starship.toml"
-backup_then_copy "$REPO_DIR/fastfetch/config.jsonc" "$CONFIG_DIR/fastfetch/config.jsonc"
 backup_then_copy "$REPO_DIR/btop/btop.conf"         "$CONFIG_DIR/btop/btop.conf"
 backup_then_copy "$REPO_DIR/btop/themes/catppuccin_mocha.theme" \
   "$CONFIG_DIR/btop/themes/catppuccin_mocha.theme"

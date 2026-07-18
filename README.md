@@ -8,7 +8,7 @@ A fancy, glassy macOS terminal in one command: **WezTerm** (Catppuccin Mocha, bl
 |---|---|
 | [WezTerm](https://wezterm.org) | GPU terminal — glassy blur, Catppuccin theme, native macOS title bar, VS Code text-editing shortcuts |
 | [Starship](https://starship.rs) | Powerline prompt: Apple logo, directory, git branch/status, language versions, command duration |
-| [fastfetch](https://github.com/fastfetch-cli/fastfetch) | Apple-logo system splash on every new tab (adapts to window width) |
+| [fastfetch](https://github.com/fastfetch-cli/fastfetch) | Apple-logo system info card — run `fastfetch` whenever you feel like flexing |
 | [yazi](https://github.com/sxyazi/yazi) | File manager with previews — type `y`, browse, quit into that folder |
 | [zoxide](https://github.com/ajeetdsouza/zoxide) | `z desktop` jumps to `~/Desktop` from anywhere |
 | [fzf](https://github.com/junegunn/fzf) | Fuzzy `Ctrl+R` history search, `Ctrl+T` file finder |

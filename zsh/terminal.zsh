@@ -78,11 +78,3 @@ shrc() {
 
 # command syntax highlighting (must be sourced last)
 source "$BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-# system info splash on new terminals: full with logo when wide,
-# info-only when narrow, skipped when tiny
-if [[ $COLUMNS -ge 80 ]]; then
-  fastfetch
-elif [[ $COLUMNS -ge 45 ]]; then
-  fastfetch --logo none
-fi
