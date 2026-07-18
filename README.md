@@ -1,6 +1,6 @@
 # mac-terminal-setup 🍚
 
-A fancy, glassy macOS terminal in one command: **WezTerm** (Catppuccin Mocha, blur, VS Code-style keybindings) + **Starship** powerline prompt + a stack of quality-of-life tools.
+My personal mac terminal setup.
 
 ## What you get
 
