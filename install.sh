@@ -21,7 +21,7 @@ fi
 say "Installing packages (existing ones are skipped)…"
 [[ -d /Applications/WezTerm.app ]] || brew install --cask wezterm
 brew install starship fastfetch zsh-autosuggestions zsh-syntax-highlighting \
-  fzf yazi zoxide eza bat btop
+  fzf yazi zoxide eza bat btop git-delta lazygit
 
 backup_then_copy() {
   local src="$1" dest="$2"
@@ -40,6 +40,23 @@ backup_then_copy "$REPO_DIR/btop/btop.conf"         "$CONFIG_DIR/btop/btop.conf"
 backup_then_copy "$REPO_DIR/btop/themes/catppuccin_mocha.theme" \
   "$CONFIG_DIR/btop/themes/catppuccin_mocha.theme"
 backup_then_copy "$REPO_DIR/zsh/terminal.zsh"       "$CONFIG_DIR/terminal-setup.zsh"
+backup_then_copy "$REPO_DIR/delta/catppuccin.gitconfig" "$CONFIG_DIR/delta/catppuccin.gitconfig"
+backup_then_copy "$REPO_DIR/lazygit/config.yml" \
+  "$HOME/Library/Application Support/lazygit/config.yml"
+
+# Pretty git diffs via delta. Only touches diff-related settings — never your
+# name/email — and skips entirely if you already use delta.
+if ! git config --global core.pager 2>/dev/null | grep -q delta; then
+  say "Setting delta as git's diff pager…"
+  git config --global core.pager delta
+  git config --global interactive.diffFilter "delta --color-only"
+  git config --global include.path "~/.config/delta/catppuccin.gitconfig"
+  git config --global delta.features catppuccin-mocha
+  git config --global delta.side-by-side true
+  git config --global delta.line-numbers true
+  git config --global delta.navigate true
+  git config --global merge.conflictstyle zdiff3
+fi
 
 SOURCE_LINE='source "$HOME/.config/terminal-setup.zsh"'
 if ! grep -qF "$SOURCE_LINE" "$HOME/.zshrc" 2>/dev/null; then

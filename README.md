@@ -17,6 +17,8 @@ My personal mac terminal setup with WezTerm + Starship + yazi + fzf + zoxide + e
 | [eza](https://github.com/eza-community/eza) | `ls`/`ll`/`lt` with icons, git status, tree view |
 | [bat](https://github.com/sharkdp/bat) | `cat` with syntax highlighting |
 | [btop](https://github.com/aristocratos/btop) | Beautiful system monitor, Catppuccin-themed |
+| [delta](https://github.com/dandavison/delta) | `git diff` becomes syntax-highlighted and side-by-side, like VS Code |
+| [lazygit](https://github.com/jesseduffield/lazygit) | Full git UI in the terminal — changed files on the left, diff on the right, stage/commit/push with single keys |
 
 ## Install
 

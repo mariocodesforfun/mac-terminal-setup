@@ -72,6 +72,8 @@ shrc() {
     'll / lt'            'detailed list / tree view' \
     'bat <file>'         'pretty file viewer' \
     'btop'               'system monitor' \
+    'lazygit'            'git UI — space stages, c commits, P pushes, q quits' \
+    'git diff'           'now side-by-side & highlighted (n/N next file, q quits)' \
     'shrc'               'this cheat sheet'
   printf '\n'
 }

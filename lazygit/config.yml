@@ -1,0 +1,15 @@
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --features catppuccin-mocha --paging=never --line-numbers
+gui:
+  theme:
+    activeBorderColor:
+      - "#89b4fa"
+      - bold
+    inactiveBorderColor:
+      - "#6c7086"
+    selectedLineBgColor:
+      - "#313244"
+    searchingActiveBorderColor:
+      - "#f9e2af"
