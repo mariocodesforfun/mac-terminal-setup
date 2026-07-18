@@ -1,6 +1,6 @@
 # mac-terminal-setup 🍚
 
-My personal mac terminal setup.
+My personal mac terminal setup with WezTerm + Starship + yazi + fzf + zoxide + eza + bat + btop.
 
 ## What you get
 
